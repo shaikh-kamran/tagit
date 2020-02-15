@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="column1">
+        <div style="height: 40px;">
+            <input class="button" type='file' (change)="onSelectFile($event)">
+        </div>
+        <div style="position: relative;">
+            <div *ngFor="let drawItem of drawItems; let i = index">
+                <input [ngStyle]="{'left':drawItem.x0 + 'px' , 'top': drawItem.y0 + 'px'}"
+                    style="position: absolute; z-index: 999;" placeholder="Enter Object Name"
+                    [(ngModel)]="drawItem.name" type="text">
+                <input [ngStyle]="{'left':drawItem.x0 + 'px' , 'top': drawItem.y0 + 'px'}"
+                    style="position: absolute; z-index: 999;" type="button" value="X" (click)="delete(i)">
+            </div>
+            <canvas #layer1 id="layer1" style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <div class="column2">
+        <div *ngFor="let drawItem of drawItems; let i = index">
+            <div class="details">
+                <div>Name: {{drawItem.name | titlecase}}</div>
+                <div>({{drawItem.x0}}, {{drawItem.y0}})</div>
+                <div>({{drawItem.x1}}, {{drawItem.y1}})</div>
+            </div>
+        </div>
+    </div>
+</div>

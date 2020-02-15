@@ -1,27 +1,15 @@
-# Tagit
+# NgxTagIt
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
+Angular Component to tag objects in Image.
 
-## Development server
+Bounding boxes is one of the most popular and recognizable image annotation method used in machine learning and deep learning. Using bounding boxes annotators are asked to outline the object in a box as per the machine learning project requirements. And it is one of the cheapest and low time taking annotation methods in the industry.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+npm i ngx-tag-it
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ - Use <ngx-ngx-tag-it></ngx-ngx-tag-it> in your HTML template.
+ - Click on upload button to Upload the Image.
+ - Click and Drag on to create bounding box around the object in the image.

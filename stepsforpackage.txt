@@ -1,0 +1,5 @@
+npm config set registry https://registry.npmjs.org/
+cd dist/package
+npm publish
+ng generate library tag-it --prefix ngx
+ng build tag-it
